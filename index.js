@@ -13,7 +13,10 @@ app.use(helmet());
   app.use(cors({ origin: 'https://pixel-verse-frontend.vercel.app' }))
 
 app.use('/api/signup',SignupRouter)
-  
+
+app.get('/', (req, res) => {
+  res.send('API is running....');
+});
 app.listen(process.env.PORT,()=>{
     console.log("Server connected..");
 })
