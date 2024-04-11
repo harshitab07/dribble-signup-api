@@ -10,7 +10,7 @@ dotenv.config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(helmet());
-  app.use(cors({ origin: 'https://pixel-verse-frontend.vercel.app' }))
+  app.use(cors({ origin: 'https://dribble-signup.netlify.app/' }))
 
 app.use('/api/signup',SignupRouter)
 
